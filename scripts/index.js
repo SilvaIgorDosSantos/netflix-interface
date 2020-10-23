@@ -1,12 +1,4 @@
-if (typeof(config.MY_KEY) === 'undefined') {
-    console.log("Colocar API")
-    const key = process.env.MY_API_KEY;
-}
-else {
-    const key = config.MY_KEY;
-}
-
-
+const key = config.MY_KEY;
 
 /* id do filme Enola Holmes na API do themoviedb */
 const idFilmePrincipal = 497582;
