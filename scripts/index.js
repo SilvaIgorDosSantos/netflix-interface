@@ -2,6 +2,8 @@ const key = config.MY_KEY;
 
 /* id do filme Enola Holmes na API do themoviedb */
 const idFilmePrincipal = 497582;
+/* id do filme Bee Movie na API do themoviedb */
+//const idFilmePrincipal = 5559;
 
 const filmePrincipal = document.querySelector('.filme-principal');
 
