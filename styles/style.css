@@ -1,0 +1,48 @@
+:root {
+    --vermelha:#e50914;
+    --preta:#141414;
+    --branca-menu:#aaa;
+    --branca-destaque:#fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 10px;
+    color: var(--vermelha);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    margin-right: 10px;
+    color: var(--branca-menu);
+    margin-left: 10px;
+}
+
+header nav a:hover {
+    color: var(--branca-destaque)
+}
+
+.filme-principal {
+    font-size: 16px;
+    
+}
