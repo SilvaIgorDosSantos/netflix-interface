@@ -1,4 +1,4 @@
-if (config.MY_KEY === undefined) {
+if (typeof(config.MY_KEY) === 'undefined') {
     console.log("Colocar API")
     const key = process.env.MY_API_KEY;
 }
