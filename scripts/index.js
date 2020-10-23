@@ -18,10 +18,8 @@ async function getFilmePrincipal () {
 
     //console.log(filme);
 
-    filmePrincipal.children[0].innerHTML = `
-        <h3 class="titulo">${filme.original_title}</h3>
-        <p class="descricao">${filme.overview}</p>
-    `;
+    filmePrincipal.children[0].children[0].innerText = filme.original_title.toUpperCase();
+    filmePrincipal.children[0].children[1].innerText = filme.overview;
 
     filmePrincipal.style.background = `
         linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), 
