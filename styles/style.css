@@ -13,6 +13,8 @@
 }
 
 body {
+    margin-left: 25px;
+    margin-right: 25px;
     background: var(--preta);
     font-family: 'Times New Roman', Times, serif;
     color: white;
@@ -44,5 +46,17 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 50px;
+}
+
+.titulo {
+    font-size: 40px;
 }
