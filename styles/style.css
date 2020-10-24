@@ -46,7 +46,7 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    height: 400px;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,4 +82,35 @@ header nav a:hover {
 
 .botao i {
     margin-right: 7px;
+}
+
+.filme-carrossel {
+    height: 30vh;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container-carrossel {
+    height: 100%;
+    width: 19.7%;
+}
+
+.carrossel-esquerda {
+    height: 100%;
+    width: 25%;
+    float: left;
+    display: flex;
+    align-items: center;
+    color: orange;
+}
+
+.carrossel-direita {
+    height: 100%;
+    width: 25%;
+    float: right;
+    display: flex;
+    align-items: center;
+    color: orange;
 }
