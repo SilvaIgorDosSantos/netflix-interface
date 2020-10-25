@@ -65,22 +65,22 @@ function mostrarCarrossel (numeroDeFilmes) {
 
 function adicionarAcaoCarrosselEsquerda () {
     botaoCarrosselEsquerda.addEventListener("mouseenter", function() {
-        primeiroFilmeDoCarrossel = (primeiroFilmeDoCarrossel === numeroDeFilmesNoCarrossel - 1 ? 0 : primeiroFilmeDoCarrossel+1);
+        primeiroFilmeDoCarrossel = (primeiroFilmeDoCarrossel === 0 ? numeroDeFilmesNoCarrossel-1 : primeiroFilmeDoCarrossel-1);
         mostrarCarrossel(numeroDeFilmesNoCarrossel);
     });
     botaoCarrosselEsquerda.addEventListener("click", function() {
-        primeiroFilmeDoCarrossel = (primeiroFilmeDoCarrossel === numeroDeFilmesNoCarrossel - 1 ? 0 : primeiroFilmeDoCarrossel+1);
+        primeiroFilmeDoCarrossel = (primeiroFilmeDoCarrossel === 0 ? numeroDeFilmesNoCarrossel-1 : primeiroFilmeDoCarrossel-1);
         mostrarCarrossel(numeroDeFilmesNoCarrossel);
     });
 }
 
 function adicionarAcaoCarrosselDireita () {
     botaoCarrosselDireita.addEventListener("mouseenter", function() {
-        primeiroFilmeDoCarrossel = (primeiroFilmeDoCarrossel === 0 ? numeroDeFilmesNoCarrossel-1 : primeiroFilmeDoCarrossel-1);
+        primeiroFilmeDoCarrossel = (primeiroFilmeDoCarrossel === numeroDeFilmesNoCarrossel - 1 ? 0 : primeiroFilmeDoCarrossel+1);
         mostrarCarrossel(numeroDeFilmesNoCarrossel);
     });
     botaoCarrosselDireita.addEventListener("click", function() {
-        primeiroFilmeDoCarrossel = (primeiroFilmeDoCarrossel === 0 ? numeroDeFilmesNoCarrossel-1 : primeiroFilmeDoCarrossel-1);
+        primeiroFilmeDoCarrossel = (primeiroFilmeDoCarrossel === numeroDeFilmesNoCarrossel - 1 ? 0 : primeiroFilmeDoCarrossel+1);
         mostrarCarrossel(numeroDeFilmesNoCarrossel);
     });
 }
