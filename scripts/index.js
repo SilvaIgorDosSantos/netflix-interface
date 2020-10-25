@@ -55,11 +55,11 @@ async function getFilmesPopulares (numeroDeFilmes) {
 }
 
 function mostrarCarrossel (numeroDeFilmes) {
-    for (let i = 0; i < filmeCarrossel.children.length; i++) {
+    for (let i = 0; i < filmeCarrossel.children[2].children.length; i++) {
         let indice = primeiroFilmeDoCarrossel+i;
         indice = (indice >= numeroDeFilmes ? indice - numeroDeFilmes : indice);
-        filmeCarrossel.children[i].style.background = posteresFilmesPopulares[indice];
-        filmeCarrossel.children[i].style.backgroundSize = 'cover';
+        filmeCarrossel.children[2].children[i].style.background = posteresFilmesPopulares[indice];
+        filmeCarrossel.children[2].children[i].style.backgroundSize = 'cover';
     }
 }
 
