@@ -122,3 +122,13 @@ header nav a:hover {
     align-items: center;
     color: orange;
 }
+
+.fa-angle-left {
+    position: absolute;
+    left: 0;
+}
+
+.fa-angle-right {
+    position: absolute;
+    right: 0;
+}
