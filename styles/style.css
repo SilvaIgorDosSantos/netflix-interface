@@ -55,7 +55,7 @@ header nav a:hover {
 
 .filme-principal .descricao {
     margin-top: 10px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 .titulo {
@@ -131,4 +131,50 @@ header nav a:hover {
 .fa-angle-right {
     position: absolute;
     right: 0;
+}
+
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao {
+        margin-top: 5px;
+        height: 60px;
+        width: 180px;
+    }
+
+
+    .container-filme-carrossel {
+        width: 33.33%;
+    }
+
+    .container-filme-carrossel:nth-child(5) {
+        display: none;
+    }
+
+    .container-filme-carrossel:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container-filme-carrossel {
+        width: 100%;
+    }
+
+    .container-filme-carrossel:nth-child(3) {
+        display: none;
+    }
+
+    .container-filme-carrossel:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .descricao {
+        width: 50%;
+    }
 }
